@@ -44,6 +44,7 @@
   --bs-black: #000;
   --bs-white: #fff;
   --bs-primary-rgb: 100, 161, 157;
+  --bs-primario-rgb: 217, 63, 99;
   --bs-secondary-rgb: 116, 100, 161;
   --bs-success-rgb: 103, 194, 156;
   --bs-info-rgb: 28, 171, 196;
@@ -237,12 +238,15 @@ sup {
   top: -0.5em;
 }
 
+/*a = links*/
 a {
-  color: #64a19d;
+  /*color: #64a19d;*/
+  color: #D93F63; 
   text-decoration: underline;
 }
 a:hover {
-  color: #50817e;
+  /*color: #50817e;*/
+  color: #2C0C12;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -3026,34 +3030,46 @@ textarea.form-control-lg {
   opacity: 0.65;
 }
 
+/*Botão principal*/
+
 .btn-primary {
   color: #fff;
-  background-color: #64a19d;
-  border-color: #64a19d;
+  /*background-color: #64a19d;
+  border-color: #64a19d;*/
+  background-color: #D93F63;
+  border-color: #D93F63;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #558985;
-  border-color: #50817e;
+  /*background-color: #558985;
+  border-color: #50817e;*/
+  background-color: #2C0C12;
+  border-color: #2C0C12;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #558985;
-  border-color: #50817e;
+  /*background-color: #558985;
+  border-color: #50817e;*/
+  background-color: #240a0e;
+  border-color: #240a0e;
   box-shadow: 0 0 0 0.25rem rgba(123, 175, 172, 0.5);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #50817e;
-  border-color: #4b7976;
+  /*background-color: #50817e;
+  border-color: #4b7976;*/
+  background-color: #240a0e;
+  border-color: #240a0e;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.25rem rgba(123, 175, 172, 0.5);
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;
-  background-color: #64a19d;
-  border-color: #64a19d;
+  /*background-color: #64a19d;
+  border-color: #64a19d;*/
+  background-color: #240a0e;
+  border-color: #240a0e;
 }
 
 .btn-secondary {
@@ -4050,7 +4066,8 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #64a19d;
+  /*color: #64a19d;*/
+  color: #D93F63;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -4060,10 +4077,12 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #50817e;
+  /* color: #50817e; */
+  color: #D93F63;
 }
 .nav-link.disabled {
-  color: #6c757d;
+  /* color: #6c757d; */
+  color: #D93F63;
   pointer-events: none;
   cursor: default;
 }
@@ -7881,7 +7900,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--bs-primario-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-secondary {
@@ -11559,8 +11578,8 @@ body {
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 2.5rem;
   line-height: 2.5rem;
-  letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  letter-spacing: 0.1rem;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
@@ -11605,10 +11624,12 @@ body {
 .projects-section .featured-text {
   padding: 2rem;
 }
+
+/*Borda do paragrafo*/
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    /*border-left: 0.5rem solid #D93F63;*/
   }
 }
 .projects-section .project-text {
@@ -11628,7 +11649,7 @@ body {
 
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/doença-falciforme-wallpaper.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11648,9 +11669,12 @@ body {
 .contact-section {
   padding-top: 5rem;
 }
+
+/*Borda dos cards parte de baixo*/
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  /*border-bottom: 0.25rem solid #64a19d;*/
+  border-bottom: 0.25rem solid #D93F63;
 }
 .contact-section .card h4, .contact-section .card .h4 {
   font-size: 0.8rem;
